@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #acd2e5;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu-lateral {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+.back-btn {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.back-btn i {
+    margin-right: 8px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.edit-profile {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.edit-profile h2 {
+    margin-bottom: 20px;
+}
+
+.edit-profile label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-profile input,
+.edit-profile textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-profile .profile-preview {
+    display: block;
+    margin: 10px 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-btn {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #006666;
+}
+
+.cancel-btn:hover {
+    background-color: #aaa;
+}
+
+footer {
+    background-color: #acd2e5;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
