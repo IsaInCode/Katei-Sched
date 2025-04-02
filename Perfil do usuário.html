@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logomarca1.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="pusuario.css">
+    <title>Perfil do Usuário | Katei Sched</title>
+</head>
+<body>
+    <header>
+        <button>Sair</button>
+        <nav class="menu-lateral">
+            <div class="sidebar" id="sidebar">
+                <div class="btn-expandir">
+                    <i class="bi bi-list" onclick="toggleSidebar()"></i>
+                </div>
+                <ul>
+                    <li class="itens-menu">
+                      <a href="pusuario.html">
+                          <span class="icon"><i class="bi bi-person-fill"></i></span>
+                          <span class="txt-link">Usuario123</span>
+                      </a>
+                    </li>
+                      <li class="itens-menu">
+                          <a href="cadreserva.html">
+                              <span class="icon"> <i class="bi bi-calendar2-week"></i></span>
+                              <span class="txt-link">Reservar</span>
+                          </a>
+                      </li>
+                      <li class="itens-menu">
+                          <a href="minhasreservas.html"> <!--adicionar o link da nova pagina de reservas-->
+                              <span class="icon"><i class="bi bi-check2-all"></i></span>
+                              <span class="txt-link">Minhas Reservas</span>
+                          </a>
+                      </li>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="apresentacao">
+                <section class="profile">
+                    <h2>Seu Perfil</h2>
+                    <div class="profile-info">
+                        <img src="" alt="Foto do Usuário" id="profile-pic">
+                        <div class="info">
+                            <p><strong>Nome:</strong> <span id="user-name">Carregando...</span></p>
+                            <p><strong>Email:</strong> <span id="user-email">Carregando...</span></p>
+                            <p><strong>Data de Nascimento:</strong> <span id="user-birthdate">Carregando...</span></p>
+                            <p><strong>Biografia:</strong> <span id="user-bio">Carregando...</span></p>
+                            <button><a href="file:///C:/Users/labceep/prot%C3%B3tipo%203bitk/katei/editarperfil.html?">Editar Perfil</a></button>
+                            <button>Sair</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+                </section>
+        <footer>
+            <p>© 2024 Katei Sched. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
+
+        const user = {
+            name: "Koga",
+            email: "koga.exemplo@email.com",
+            birthdate: "21/11/2000",
+            bio: "Apaixonada por tecnologia e desenvolvimento web.",
+            profilePic: "https://via.placeholder.com/150"
+        };
+
+        function loadUserProfile() {
+            document.getElementById('user-name').innerText = user.name;
+            document.getElementById('user-email').innerText = user.email;
+            document.getElementById('user-birthdate').innerText = user.birthdate;
+            document.getElementById('user-bio').innerText = user.bio;
+            document.getElementById('profile-pic').src = user.profilePic;
+        }
+
+        document.addEventListener('DOMContentLoaded', loadUserProfile);
+    </script>
+</body>
+</html>
