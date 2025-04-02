@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logomarca1.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="editarperfil.css">
+    <title>Editar Perfil | Katei Sched</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-lateral">
+                <a href="pusuario.html" class="back-btn">
+                    <i class="bi bi-arrow-left"></i> Voltar
+                </a>
+                <h1>Editar Perfil</h1>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="edit-profile">
+            <form id="editProfileForm">
+                <h2>Editar Informações do Perfil</h2>
+
+                <label for="profilePic">Nova Foto de Perfil:</label>
+                <input type="file" id="profilePic" accept="image/*">
+                <img id="profilePreview" src="https://via.placeholder.com/150" alt="Preview da Foto" class="profile-preview">
+
+                <label for="userName">Nome:</label>
+                <input type="text" id="userName" placeholder="Digite seu nome">
+
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" placeholder="Digite seu email">
+
+                <label for="userBio">Biografia:</label>
+                <textarea id="userBio" placeholder="Escreva algo sobre você"></textarea>
+
+                <label for="newPassword">Nova Senha:</label>
+                <input type="password" id="newPassword" placeholder="Digite uma nova senha">
+
+                <label for="confirmPassword">Confirmar Nova Senha:</label>
+                <input type="password" id="confirmPassword" placeholder="Confirme sua nova senha">
+
+                <div class="buttons">
+                    <button type="submit" class="save-btn" onclick="saveChanges()">Salvar Alterações</button>
+                    <button type="reset" class="cancel-btn" onclick="resetForm()">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Katei Sched. Todos os direitos reservados.</p>
+    </footer>
+    <script src="editarperfil.js"></script>
+</body>
+</html>
